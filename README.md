@@ -13,6 +13,7 @@ As páginas `index.html`, `sobre-mim.html`, `projetos.html` e `contactos.html` s
 ## Objetivos
 - Desenvolver um website pessoal (portfólio);
 - Organizar e apresentar trabalhos da área;
+- Dar a conhecer ao público os projetos realizados e de possivel realização;
 - Aplicar conhecimentos de HTML, CSS e JavaScript;
 - Integrar projetos desenvolvidos em Processing.
 
@@ -20,7 +21,11 @@ As páginas `index.html`, `sobre-mim.html`, `projetos.html` e `contactos.html` s
 - HTML5  
 - CSS3  
 - JavaScript  
-- Processing  
+- Processing
+- Adobe Illustrator
+- Figma
+- Affinity by Canva
+- Procreate  
 
 ---
 
@@ -28,9 +33,18 @@ As páginas `index.html`, `sobre-mim.html`, `projetos.html` e `contactos.html` s
 
 - **index.html** → Página inicial  
 - **sobre-mim.html** → Informações sobre o autor/marca  
-- **projetos.html** → Apresentação dos trabalhos desenvolvidos  
+- **projetos.html** → Apresentação dos trabalhos desenvolvidos divido por Subpáginas para cada categoria
 - **contactos.html** → Contactos do autor  
 - **processing.html** → Projetos desenvolvidos em Processing (com canvas)
+
+## SubPáginas de **projetos.html**
+
+- **identidade-grafica.html** - 
+- **websites.html**
+- **fotografia.html**
+- **ilustracoes.html**
+
+
 
 ## Estrutura do Projeto
 ![Estrutura](imagens/readme/estrutura.jpg)

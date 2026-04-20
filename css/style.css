@@ -103,3 +103,17 @@ h2{
   font-weight: 700;
   line-height: 1.15;
 }
+
+/* Definição da tipografia para desktop*/
+
+@media (min-width: 992px){
+
+h1{
+  font-size: 7.986rem;
+
+}
+h2{
+  font-size: 5.488rem;
+  
+}
+}

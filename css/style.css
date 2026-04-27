@@ -234,3 +234,36 @@ a:hover, a:active, a.active{
 .nav__close {
   opacity: 0;
 }
+/* navigation for mobile devices*/
+@media screen and (max-width: 992px) {
+  .nav__menu {
+    position: absolute;
+    left: 0;
+    top: 3.5rem;
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    overflow: auto;
+    /*pointer-events: none;
+    opacity: 0;*/
+    transition: top .4s, opacity .3s;
+  }
+}
+.nav__menu: ::-webkit-scrollbar{
+  width:0;
+}
+
+.nav__list{
+  background-color: var(--background-cor);
+  padding-top: 1rem;
+}
+
+.nav__link{
+  color: var(--cor-primaria);
+  background-color:(var(--cor-bottoms));
+  font-weight: var(var(--font-semibold));
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color .3s;
+}

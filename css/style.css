@@ -79,7 +79,25 @@ iframe, video {
 }
 
 /******************************************************************************************************** O SEU CÓDIGO COMEÇA DEPOIS DESTE COMENTÁRIO ********************************************************************************************************/
+:root {
+  /*===== Colors=====*/
+  --cor-texto-corrido: #ffffff;
+  --background-cor: #2985EE;
+  --cor-primaria: #2985EE;
+  --cor-bottoms: #FAFFD7;
+  --cor-link: #ffe600;
 
+  /*========Font weight======================*/
+  --font-regular: 400;
+  --font-semibold: 600;
+  --font-bold: 800;
+
+  /*==== Z Index ======*/
+  --z-tooltip:10;
+  --z-fixrd:100;
+
+
+}
 body {
   font-family:"Montserrat", sans-serif;
   font-size: 16px; 

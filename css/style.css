@@ -78,8 +78,17 @@ iframe, video {
   width: 100%
 }
 
-/******************************************************************************************************** O SEU CÓDIGO COMEÇA DEPOIS DESTE COMENTÁRIO ********************************************************************************************************/
+/*=================== O SEU CÓDIGO COMEÇA DEPOIS DESTE COMENTÁRIO ====================================*/
+.pageWidth{
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 :root {
+
+  --header-height: 3.5rem;
+
   /*===== Colors=====*/
   --cor-texto-corrido: #ffffff;
   --background-cor: #2985EE;
@@ -94,16 +103,16 @@ iframe, video {
 
   /*==== Z Index ======*/
   --z-tooltip:10;
-  --z-fixrd:100;
-
-
+  --z-fixed:100;
 }
+
 body {
   font-family:"Montserrat", sans-serif;
   font-size: 16px; 
   color: #FAFFD7;
   background-color: #2985EE;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Air Americana, sans-serif;}
  /* @font-face {
@@ -134,4 +143,94 @@ h2{
   font-size: 5.488rem;
   
 }
+}
+p{
+  font-size: 1rem;
+}
+small{
+  font-size:0.7rem;
+}
+strong{
+  font-size:2.3rem;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: var(--cor-link);
+}
+
+a:hover, a:active, a.active{
+  color: var( --cor-primaria);
+}
+
+/*============ Menu de Navegação ===============*/
+
+/*============ Header ======================*/
+
+#topHeader {
+  position: fixed; /*=== menu fixo no scrool ====*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--cor-bottoms);
+  box-shadow: hsl(0,0, 0);
+
+  z-index: var(--z-fixed);
+}
+
+#mainMenu { 
+  height: var(--header-height);
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.nav__burger,
+.nav__close {
+  color: #2985EE
+}
+.navAction{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#headerLogo {
+  display:inline-flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
+#headerLogo a{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+#headerLogo img{
+  width: 1rem;
+}
+.nav__toggle{
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+.nav__burger,
+.nav__close{
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  inset: 0;
+  margin:auto;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: opacity .1s, transform .4s;
+}
+
+.nav__close {
+  opacity: 0;
 }

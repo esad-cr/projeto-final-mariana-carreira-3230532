@@ -15,35 +15,50 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!-- Contém tudo o que será exibido na página: textos, imagens, links, etc. -->
-        <header id="topHeader">
+        <header id="topHeader" class="pageWidth">
         <!-- Representa o cabeçalho da página ou de uma seção. Contém títulos, logotipo, menus, etc.-->
             <div id="headerLogo">
                 <a href="index.html" title="Projecto Final - Index" rel="noopener noreferrer"><img src="imagens/logo.svg" alt="Logo ABCD"></a>
             </div>         
             <nav id="mainMenu">
+                <div class="navAction">
+                    <div id="headerLogo">
+                        <a href="index.html" title="Projeto Final - Index" rel="noopener noreferrer"> <img src="imagens/logo.svg" alt="design á carreira"></a>
+                    </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-close-line nav__close"></i>
+                        <i class="ri-menu-fill nav__burger"></i>
+                    </div>
+                </div>
             <!-- Define uma área de navegação, com links internos ou externos. -->
-                <ul>
-                    <li>
-                        <a href="index.html" title="página principal" rel="noopener noreferrer">Início</a>
-                    </li>
-                    <li>
-                        <a href="sobre-mim.html" title="Sobre mim" rel="noopener noreferrer">Sobre mim</a>
-                    </li>
-                    <li>
-                        <a href="projetos.html" title="Os meus projetos" rel="noopener noreferrer">Projetos</a>
-                    </li>
-                    <li>
-                        <a href="processing.html" title="Trabalhos em Processing" rel="noopener noreferrer">Processing</a>
-                    </li>
-                    <li>
-                        <a href="contactos.html" title="COntactos" rel="noopener noreferrer">Contactos</a>
-                    </li>
-                </ul>
+                <div class="nav__menu" id="navMenu">
+                    <ul class="nav__list">
+                        <li>
+                            <a class="nav__link active" href="index.html" title="página principal" rel="noopener noreferrer">Início</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="sobre-mim.html" title="Sobre mim" rel="noopener noreferrer">Sobre mim</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="projetos.html" title="Os meus projetos" rel="noopener noreferrer">Projetos</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="processing.html" title="Trabalhos em Processing" rel="noopener noreferrer">Processing</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="contactos.html" title="COntactos" rel="noopener noreferrer">Contactos</a>
+                        </li>
+                 </ul>
+                </div>
+                
             </nav>
         </header>
         <main>

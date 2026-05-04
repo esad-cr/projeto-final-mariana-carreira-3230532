@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Elemento raiz do documento. O atributo lang="pt-PT" informa que o conteúdo está em português.-->
+<html lang="pt-PT">
+    <head>
+        <!-- Contém informações sobre o documento (meta-informações, título, links para CSS e scripts). -->
+        <meta charset="UTF-8"><!-- Define a codificação para caracteres (acentuação correta) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Torna o site responsivo em dispositivos móveis -->
+        <title>Projeto Final</title>
+        <meta name="author" content="Mariana Carreira"/><!-- Define o autor do site -->
+        <meta name="description" content="Descrição do projeto final" /><!-- Descrição da página (ajuda no SEO) -->
+        <meta name="keywords" content="ESAD.CR, Licenciatura de Mulimédia, Projecto Final" /><!-- Palavras-chave da página (ajuda no SEO) -->
+        <!-- Metadata para chamar o favicon -->
+        <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
+        <!-- Integração da CSS -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <header id="topHeader">
+    <nav id="mainMenu" class="pageWidth"> <!-- A classe pageWidth deve estar aqui para alinhar o conteúdo ao centro -->
+        <div class="navAction">
+            <div id="headerLogo">
+                <a href="index.html" title="Projeto Final">
+                    <img src="imagens/logo.svg" alt="Logo">
+                </a>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-close-line nav__close"></i>
+                <i class="ri-menu-fill nav__burger"></i>
+               
+            </div>
+        </div>
+
+        <div class="nav__menu" id="navMenu">
+            <ul class="nav__list">
+                <li><a class="nav__link active" href="index.html">Início</a></li>
+                <li><a class="nav__link" href="sobre-mim.html">Sobre mim</a></li>
+                <li><a class="nav__link" href="projetos.html">Projetos</a></li>
+                <li><a class="nav__link" href="processing.html">Processing</a></li>
+                <li><a class="nav__link" href="contactos.html">Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+        <main id="mainContent">
+        <!-- O conteúdo principal da página, exclusivo e central. Deve haver apenas um <main> por página. -->
+            <h1>Página Index</h1>
+            <h2>Artigo Principal</h2>
+        </main>
+        <footer id="mainFooter">
+            <!-- Define o rodapé da página ou de uma secção. Contém informações como: Direitos de autor, contatos, links úteis e créditos -->
+            <p>&copy; - Todos os direitos reservado <b>|</b> 2026 Projeto Final</p>
+        </footer>
+        <!-- Os ficheiro de script ficam no final da página -->
+        <script src="js/script.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" integrity="sha512-lbO95HE52QWwrDVEaDJmW9Xr8UIfMpRFT3akB8ett7lGfWsrGKz07L6wfwnF3KJ3T4a8cZupAKoI9Q2jH+0QIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="processing/script.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+</html>

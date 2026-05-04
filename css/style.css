@@ -203,16 +203,16 @@ a:hover, a:active, a.active{
 #headerLogo {
   display:inline-flex;
   align-items: center;
-  column-gap: .25rem;
+  column-gap: 3.5rem;
 }
 
 #headerLogo a{
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 3.5rem;
 }
 #headerLogo img{
-  width: 1rem;
+  width: 3rem;
 }
 .nav__toggle{
   position: relative;
@@ -266,4 +266,34 @@ a:hover, a:active, a.active{
   justify-content: space-between;
   align-items: center;
   transition: background-color .3s;
+}
+
+/*navigation for large devices*/
+@media screen and (min-width: 992px) {
+  #topHeader {
+    margin-inline: auto;
+  }
+  #mainMenu{
+    height: calc(var(--header-height) + 2rem);
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .nav__list {
+    height: 100%;
+    display: flex;
+    column-gap: 3rem;
+  }
+  .nav__link {
+    height: 100%;
+    padding: 0;
+    justify-content: initial;
+    column-gap: .25rem;
+    background-color: transparent;
+  }
+  .nav__link:hover {
+    background-color: transparent;
+  }
 }

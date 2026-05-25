@@ -340,6 +340,9 @@ a:hover, a:active, a.active{
   .nav__link:hover {
     background-color: transparent;
   }
+  .nav__list li {
+    font-weight: bold;
+  }
 }
 
 /* Show menu*/

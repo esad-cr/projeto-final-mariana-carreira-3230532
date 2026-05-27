@@ -111,12 +111,13 @@ body {
   font-size: 18px; 
   color: #FAFFD7;
   background-color: #2985EE;
+
 }
 
+
 h1, h2, h3, h4, h5, h6 {
-  font-family:"Air Americana DEMO", sans-serif;}
-
-
+  font-family:"Air Americana DEMO", sans-serif;
+}
 
 
 h1{
@@ -180,6 +181,47 @@ a:hover, a:active, a.active{
 .space-XL{
   height: 120px;
 }
+
+/*=========== CARACTERISTICAS ESPECIFICAS DAS PÁGINAS ============*/
+      /*========CRIAÇÃO DE DOIS CONTENTORES===============*/
+
+/* O Contentor Principal */
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: justify;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 120px;
+}
+
+/* Contentor Texto */
+.sobre-texto {
+    width: 70%;                  
+    height: 80%;
+}
+
+/* Contentor Imagem */
+.sobre-imagem {
+    width: 50%;                 
+    display: flex;
+    justify-content: center;
+}
+
+/* Imagem */
+.sobre-imagem img {
+    max-width: 80%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
 
 /*============ Menu de Navegação ===============*/
 

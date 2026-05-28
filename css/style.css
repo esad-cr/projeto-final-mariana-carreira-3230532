@@ -182,50 +182,6 @@ a:hover, a:active, a.active{
   height: 120px;
 }
 
-/*=========== CARACTERISTICAS ESPECIFICAS DAS PÁGINAS ============*/
-      /*========CRIAÇÃO DE DOIS CONTENTORES===============*/
-
-/* O Contentor Principal */
-.sobre-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 120px auto;
-}
-
-/* Contentor Texto */
-.sobre-texto {
-    width: 60%;                  
-    height: 80%;
-}
-
-.sobre-texto p{
-  font-weight: var(--font-bold);
-  font-size: 1.25rem;
-  line-height: 1.6rem;
-  text-align: justify;
-}
-
-/* Contentor Imagem */
-.sobre-imagem {
-    width: 40%;                 
-    display: flex;
-    justify-content: flex-end;
-}
-
-/* Imagem */
-.sobre-imagem img {
-    max-width: 80%;
-    height: auto;
-    padding: 30px;
-}
-
-
-
-
 
 /*============ Menu de Navegação ===============*/
 
@@ -450,5 +406,50 @@ p.hero-description{
     margin-top: 10px;
     color: var(--white-color);
 }
+
+/*=========== CARACTERISTICAS ESPECIFICAS DAS PÁGINAS ============*/
+
+      /*================SOBRE MIM===============*/
+      /*===CRIAÇAO de dois contentores para colocar texto e imagem ====*/
+
+/* O Contentor Principal */
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 120px auto;
+}
+
+/* Contentor Texto */
+.sobre-texto {
+    width: 60%;                  
+    height: 80%;
+}
+
+.sobre-texto p{
+  font-weight: var(--font-bold);
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  text-align: justify;
+}
+
+/* Contentor Imagem */
+.sobre-imagem {
+    width: 40%;                 
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Imagem */
+.sobre-imagem img {
+    max-width: 80%;
+    height: auto;
+    padding: 30px;
+}
+
+
 
 /*******************mainFooter********************/

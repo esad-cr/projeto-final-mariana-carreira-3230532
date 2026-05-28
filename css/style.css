@@ -452,14 +452,14 @@ p.hero-description{
 
       /*================PROJETOS===============*/
       
-      /*=============== CARD ===============*/
-
-.container-hover-cards {
+  .container-hover-cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-inline: 1.5rem;
   padding-block: 5rem;
+  padding: 150px;
+  margin-bottom: 50px;
 }
 
 .card__container {
@@ -472,16 +472,21 @@ p.hero-description{
 .card__article {
   position: relative;
   overflow: hidden;
+  width: 328px;  
+  height: 420px;
 }
 
 .card__img {
-  width: 328px;
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
   border-radius: 1.5rem;
+  display: block;
 }
 
 .card__data {
   width: 280px;
-  background-color: var(--white-color);
+  background-color: var(--cor-bottoms);
   padding: 1.5rem 2rem;
   box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
   border-radius: 1rem;
@@ -490,7 +495,7 @@ p.hero-description{
   left: 0;
   right: 0;
   margin-inline: auto;
-  opacity: 0;
+  opacity: 90%;
   transition: opacity 1s 1s;
 }
 
@@ -499,16 +504,30 @@ p.hero-description{
   margin-bottom: .25rem;
 }
 
+
 .card__title {
   font-weight: 500;
-  color: var(--secondary-color);
+  color: var(--cor-primaria);
   margin-bottom: .75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
+.card__paragrafo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.0rem;
+  color: #2985EE;
+  margin-top: -10px;
+  padding-bottom: 5px;
+
+}
 .card__button {
   text-decoration: none;
   font-weight: 500;
   color: var(--primary-color);
+  display: table; 
+  margin-left: auto;
 }
 
 .card__button:hover {
@@ -518,7 +537,7 @@ p.hero-description{
 /* Naming animations in hover */
 .card__article:hover .card__data {
   animation: show-data 1s forwards;
-  opacity: 1;
+  opacity: 80%;
   transition: opacity .3s;
 }
 
@@ -534,7 +553,7 @@ p.hero-description{
   animation: remove-data 1s forwards;
 }
 
-/* Card animation */
+/*===animação===*/
 @keyframes show-data {
   50% {
     transform: translateY(-10rem);
@@ -572,4 +591,54 @@ p.hero-description{
   }
 }
 
+/*====SECÇÃO 2 ======*/
+.project__1{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.card__proj__1 {
+  width: 600px;
+  height: 500px;
+} 
+
+.card__proj__1,
+.card__text_1,
+.card__gallery_1 {
+    flex: 1;
+}
+
+
+.card__gallery_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.card__gallery_1 img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 8px; 
+    transition: transform 0.3s ease;
+}
+
+.card__gallery_1 img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* =========================================
+   RESPONSIVIDADE (Telemóveis e Tablets)
+   ========================================= */
+@media screen and (max-width: 992px) {
+    .project__1 {
+        flex-direction: column; /* Volta a colocar o texto por baixo da imagem em ecrãs pequenos */
+        gap: 20px;
+    }
+}
 /*******************mainFooter********************/

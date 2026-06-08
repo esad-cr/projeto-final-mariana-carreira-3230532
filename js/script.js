@@ -12,3 +12,7 @@ const showMenu = (toggleId, navId) =>{
     })
 }
 showMenu('nav-toggle','navMenu')
+
+const lightbox = GLightbox({
+    loop : true
+})

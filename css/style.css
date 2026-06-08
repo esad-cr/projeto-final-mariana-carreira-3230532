@@ -378,7 +378,7 @@ a:hover, a:active, a.active{
 
 .hero {
     height: 90vh;
-    /*background-image: url('../imagens/FOTO_EU.png');*/
+    background-image: url('../imagens/MOCKUP_PITAU.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position:top center;
@@ -449,6 +449,9 @@ p.hero-description{
     height: auto;
     padding: 30px;
 }
+
+/*=======================index========================*/
+
 
       /*================PROJETOS===============*/
       
@@ -534,7 +537,7 @@ p.hero-description{
   text-decoration: underline;
 }
 
-/* Naming animations in hover */
+/* animação em hover */
 .card__article:hover .card__data {
   animation: show-data 1s forwards;
   opacity: 80%;

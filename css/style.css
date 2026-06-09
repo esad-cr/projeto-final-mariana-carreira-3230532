@@ -671,6 +671,173 @@ h2{
 }
 
 /* =========================================
+   SECÇÃO DE CONTACTOS
+   ========================================= */
+
+#sectionContactos {
+    padding: 60px 20px; /* Dá espaço em cima e em baixo da secção */
+    margin: 0 auto; /* Garante que fica centrado */
+}
+
+.contact-container {
+    display: flex;
+    width: 100%;
+    gap: 60px; /* Espaço entre o formulário e o texto */
+}
+
+/* --- ESTILOS DO FORMULÁRIO (ESQUERDA) --- */
+.contact-form {
+    flex: 1; /* Ocupa 50% do espaço */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333; /* Podes mudar esta cor para combinar com a tua paleta */
+    font-size: 14px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 14px;
+    color: #555;
+    outline: none;
+    font-family: inherit; /* Puxa a fonte Montserrat que definiste */
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #e0ac4c; /* Cor de destaque quando se clica para escrever */
+}
+
+.btn-submit {
+    background-color: #e0ac4c; /* Cor amarelo/mostarda */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    font-family: inherit;
+}
+
+.btn-submit:hover {
+    background-color: #c9983f;
+}
+
+/* --- ESTILOS DAS INFORMAÇÕES (DIREITA) --- */
+.contact-info {
+    flex: 1; /* Ocupa 50% do espaço */
+}
+
+.accent-text {
+    color: #e0ac4c;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contact-info h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Grid para os ícones de contacto */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.info-item .icon {
+    font-size: 24px;
+    color: #e0ac4c;
+    margin-top: 2px;
+}
+
+.info-item h5 {
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Redes Sociais */
+.social-media h5 {
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background-color: var(--cor-bottoms);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px; /* Tamanho dos ícones Remix */
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--background-cor);
+    transform: translateY(-3px); /* Pequeno efeito de subir ao passar o rato */
+}
+
+/* Responsividade: Empilhar em ecrãs de telemóvel */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
    RESPONSIVIDADE (Telemóveis e Tablets)
    ========================================= */
 @media screen and (max-width: 992px) {

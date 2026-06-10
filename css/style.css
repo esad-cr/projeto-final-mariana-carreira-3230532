@@ -843,7 +843,19 @@ h2{
     margin: 100px;
     height: 450px;
     width: 390px;
+    border-radius: 50px;
 }
+
+.processingimagens__container {
+  width: 400px;
+  height: auto;
+}
+.processingimagens img {
+  max-width: 50%;
+  height: auto;
+  
+}
+
 
 /* =========================================
    RESPONSIVIDADE (Telemóveis e Tablets)

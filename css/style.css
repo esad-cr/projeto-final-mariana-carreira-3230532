@@ -131,6 +131,8 @@ h2{
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.15;
+  margin-left: 50px;
+  scroll-margin-top: 100px;
 }
 
 h3{
@@ -149,6 +151,11 @@ h5 {
   font-size: 0.5rem;
 }
 
+h6 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
 input::placeholder,
 textarea::placeholder {
     font-family: "Montserrat", sans-serif;
@@ -630,9 +637,9 @@ p.hero-description{
   margin-left: 50px;
   margin-right: 50px;
 }
-h2{
-  margin-left: 50px;
-  margin-bottom: 20px;
+.card__h2{
+  margin-left: 0px;
+  margin-bottom: 0px
 }
 
 .card__proj__1 {
@@ -774,7 +781,7 @@ h2{
 
 .contact-info h2 {
     font-size: 32px;
-    color: var(--cor-texto-corrido);
+    color: var(--cor-bottoms);
     margin-bottom: 15px;
 }
 

@@ -139,58 +139,75 @@ h3{
   line-height: 1.15;
 
 }
+h4 {
+  font-size: 1rem;
+   font-weight: 200;
+  line-height: 1.15;
+}
+
+h5 {
+  font-size: 0.5rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: "Montserrat", sans-serif;
+    color: var(--cor-texto-corrido); 
+    opacity: 0.7;
+}
 
 /* Definição da tipografia para desktop*/
 
 @media (min-width: 992px){
 
-h1{
-  font-size: 7.986rem;
+  h1{
+    font-size: 7.986rem;
 
-}
-h2{
-  font-size: 3rem;
-}
-h3{
-  font-size:2rem;
-}
-p{
-  font-size: 1.5rem;
-}
-small{
-  font-size:0.7rem;
-}
-strong{
-  font-size:2.3rem;
-}
-ul{
-  list-style: none;
-}
-a{
-  text-decoration: none;
-  color: var(--cor-link);
-}
+  }
+  h2{
+    font-size: 3rem;
+  }
+  h3{
+    font-size:2rem;
+  }
+  
+  p{
+    font-size: 1.5rem;
+  }
+  small{
+    font-size:0.7rem;
+  }
+  strong{
+    font-size:2.3rem;
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: var(--cor-link);
+  }
 
-a:hover, a:active, a.active{
-  color: var( --cor-primaria);
-}
+  a:hover, a:active, a.active{
+    color: var( --cor-primaria);
+  }
 
-.space-S{
-  height: 30px;
-}
+  .space-S{
+    height: 30px;
+  }
 
-.space-M{
-  height: 60px;
-}
+  .space-M{
+    height: 60px;
+  }
 
-.space-L{
-  height: 90px;
-}
+  .space-L{
+    height: 90px;
+  }
 
-.space-XL{
-  height: 120px;
+  .space-XL{
+    height: 120px;
+  }
 }
-
 
 /*============ Menu de Navegação ===============*/
 
@@ -674,6 +691,7 @@ h2{
    SECÇÃO DE CONTACTOS
    ========================================= */
 
+
 #sectionContactos {
     padding: 60px 20px; /* Dá espaço em cima e em baixo da secção */
     margin: 0 auto; /* Garante que fica centrado */
@@ -698,7 +716,7 @@ h2{
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #333; /* Podes mudar esta cor para combinar com a tua paleta */
+    color: var(--cor-texto-corrido); /* Podes mudar esta cor para combinar com a tua paleta */
     font-size: 14px;
 }
 
@@ -706,23 +724,23 @@ h2{
 .input-group textarea {
     width: 100%;
     padding: 12px 15px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--cor-bottoms);
     border-radius: 8px;
     background-color: transparent;
     font-size: 14px;
-    color: #555;
+    color: var(--cor-texto-corrido);
     outline: none;
-    font-family: inherit; /* Puxa a fonte Montserrat que definiste */
+    font-family: Montsserat; /* Puxa a fonte Montserrat que definiste */
 }
 
 .input-group input:focus,
 .input-group textarea:focus {
-    border-color: #e0ac4c; /* Cor de destaque quando se clica para escrever */
+    border-color: var(--cor-bottoms); /* Cor de destaque quando se clica para escrever */
 }
 
 .btn-submit {
-    background-color: #e0ac4c; /* Cor amarelo/mostarda */
-    color: white;
+    background-color: var(--cor-bottoms); /* Cor amarelo/mostarda */
+    color: var(--cor-primaria);
     border: none;
     padding: 12px 24px;
     border-radius: 8px;
@@ -732,11 +750,13 @@ h2{
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: 0.3s ease;
-    font-family: inherit;
+    font-family: "Montserrat", sans-serif;
 }
 
 .btn-submit:hover {
-    background-color: #c9983f;
+    background-color: var(--cor-primaria);
+    color: var(--cor-bottoms);
+    transform: translateY(-3px);
 }
 
 /* --- ESTILOS DAS INFORMAÇÕES (DIREITA) --- */
@@ -745,7 +765,7 @@ h2{
 }
 
 .accent-text {
-    color: #e0ac4c;
+    color: var(--cor-bottoms);
     font-style: italic;
     font-size: 18px;
     font-weight: 500;
@@ -754,12 +774,12 @@ h2{
 
 .contact-info h2 {
     font-size: 32px;
-    color: #222;
+    color: var(--cor-texto-corrido);
     margin-bottom: 15px;
 }
 
 .description {
-    color: #777;
+    color: var(--cor-texto-corrido);
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 30px;
@@ -776,36 +796,43 @@ h2{
 .info-item {
     display: flex;
     align-items: flex-start;
-    gap: 15px;
+    gap: 30px;
+    margin: 20px;
 }
 
 .info-item .icon {
-    font-size: 24px;
-    color: #e0ac4c;
-    margin-top: 2px;
+    font-size: 40px;
+    color: var(--cor-bottoms);
+    margin-top: 10px;
+    
 }
 
 .info-item h5 {
     font-size: 16px;
-    color: #222;
+    color: var(--cor-bottoms);
     margin-bottom: 5px;
 }
 
 .info-item p {
     font-size: 14px;
-    color: #777;
+    color: var(--cor-bottoms);
+}
+
+.info-item a:hover {
+  color: var(--cor-texto-corrido)
 }
 
 /* Redes Sociais */
 .social-media h5 {
     font-size: 16px;
-    color: #222;
-    margin-bottom: 15px;
+    color: var(--cor-texto-corrido);
+    margin-bottom: 30px;
 }
 
 .social-icons {
     display: flex;
     gap: 15px;
+    margin-top: 20px;
 }
 
 .social-icons a {
@@ -815,7 +842,7 @@ h2{
     width: 38px;
     height: 38px;
     background-color: var(--cor-bottoms);
-    color: white;
+    color: var(--cor-primaria);
     border-radius: 50%;
     text-decoration: none;
     font-size: 18px; /* Tamanho dos ícones Remix */
@@ -824,7 +851,8 @@ h2{
 
 .social-icons a:hover {
     background-color: var(--background-cor);
-    transform: translateY(-3px); /* Pequeno efeito de subir ao passar o rato */
+    transform: translateY(-3px);
+    color: var(--cor-bottoms);
 }
 
 /* Responsividade: Empilhar em ecrãs de telemóvel */
@@ -872,6 +900,7 @@ h2{
   display: block;   
   border-radius: 0; 
   margin-right: 0;
+}
 
 
 /* =========================================
@@ -879,8 +908,145 @@ h2{
    ========================================= */
 @media screen and (max-width: 992px) {
     .project__1 {
-        flex-direction: column; /* Volta a colocar o texto por baixo da imagem em ecrãs pequenos */
+        flex-direction: column; 
+        gap: 20px;
+    } 
+
+    /* =========================================
+   RESPONSIVIDADE (Telemóveis e Tablets até 992px)
+   ========================================= */
+@media screen and (max-width: 992px) {
+    
+    /* Hero Section - Reduzir o tamanho da fonte e ajustar a largura */
+    h1.hero-heading {
+        width: 90%;
+        font-size: 3rem;
+        margin-top: 50px;
+    }
+
+    /* Sobre Mim - Empilhar texto e imagem */
+    .sobre-container {
+        flex-direction: column;
+        margin: 60px auto;
+        padding: 20px;
+    }
+    .sobre-texto, .sobre-imagem {
+        width: 100%;
+    }
+    .sobre-imagem {
+        justify-content: center; /* Centra a imagem no mobile */
+    }
+
+    /* Cards de Projetos - Remover paddings gigantes e empilhar */
+    .container-hover-cards {
+        padding: 40px 20px; /* Reduz de 150px para 40px */
+        margin-bottom: 20px;
+    }
+    .card__container {
+        flex-direction: column;
+        align-items: center; /* Centra os cartões */
+        gap: 2rem;
+    }
+
+    /* Secção Projeto 1 - Empilhar e remover larguras fixas */
+    .project__1 {
+        flex-direction: column; 
+        margin-left: 20px;
+        margin-right: 20px;
         gap: 20px;
     }
+    .card__proj__1 {
+        width: 100%; /* Remove a largura fixa de 600px */
+        height: auto;
+    }
+
+    /* Galerias - Reduzir colunas para não ficarem minúsculas */
+    .card__gallery_2 {
+        grid-template-columns: repeat(2, 1fr); /* Passa de 4 para 2 colunas no mobile */
+    }
+
+    /* Processing e Relógio - Empilhar e ajustar margens */
+    .espacorelogio {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .relogio {
+        margin: 40px auto; /* Remove a margem gigante de 100px */
+        position: relative; /* Desativa o sticky no mobile, costuma causar bugs de leitura */
+        top: 0;
+    }
 }
+/* =========================================
+   CORREÇÃO DO MENU MOBILE E ÍCONES
+   ========================================= */
+
+/* 1. Controlar os ícones (Garante que nunca se sobrepõem) */
+.nav__toggle {
+  z-index: var(--z-fixed); /* Mantém o botão clicável por cima de tudo */
+  cursor: pointer;
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.nav__burger {
+  display: block;
+}
+
+.nav__close {
+  display: none; /* O "X" fica escondido por defeito */
+}
+
+/* Quando o JavaScript ativa o menu aberto */
+.show-icon .nav__burger {
+  display: none;
+}
+.show-icon .nav__close {
+  display: block;
+  font-size: 2rem;
+}
+
+/* 2. Estrutura do Menu em Ecrãs Pequenos */
+@media screen and (max-width: 992px) {
+  
+  .nav__menu {
+    position: fixed;
+    top: -100%; /* Esconde o menu totalmente fora do ecrã no topo */
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ocupa a altura toda do ecrã */
+    background-color: var(--cor-bottoms); /* Aplica a cor creme */
+    padding-top: 6rem; /* Dá espaço para o logo e botão no topo */
+    transition: top 0.4s ease; /* Animação suave a descer */
+    z-index: 90; /* Fica abaixo do topHeader mas acima da página */
+    
+    /* Centrar o conteúdo do menu */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* A classe que o teu JavaScript injeta para fazer o menu descer */
+  .nav__menu.show-menu {
+    top: 0;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Espaçamento limpo entre cada link */
+    background-color: transparent;
+    padding-top: 0;
+  }
+
+  .nav__link {
+    font-size: 1.5rem; /* Aumenta a letra para ser fácil clicar no telemóvel */
+    font-weight: var(--font-bold);
+    color: var(--cor-primaria);
+    padding: 0;
+  }
+}
+
 /*******************mainFooter********************/

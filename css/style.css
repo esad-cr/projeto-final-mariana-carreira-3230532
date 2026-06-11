@@ -264,11 +264,11 @@ textarea::placeholder {
 #headerLogo a{
   display: flex;
   align-items: center;
-  font-size: 3.5rem;
+  font-size: 10rem;
 }
 #headerLogo img{
-  width: 4rem;
-  height: 4rem;
+  width: 7rem;
+  height: 6rem;
   display: block;
 
 }
@@ -474,6 +474,7 @@ p.hero-description{
     width: 40%;                 
     display: flex;
     justify-content: flex-end;
+    z-index: 1;
 }
 
 /* Imagem */
@@ -947,6 +948,30 @@ p.hero-description{
     background-color: var(--background-cor);
     transform: translateY(-3px);
     color: var(--cor-bottoms);
+}
+
+.contact-section {
+    position: relative;
+}
+
+.imagem_direita {
+    position: fixed;
+    bottom: 5%;
+    right: -500px;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 0; 
+    pointer-events: none;
+    top: 300px;
+    
+}
+
+.contact-section form,
+.contact-section h2,
+.contact-section p,
+.contact-section a {
+    position: relative;
+    z-index: 2; /* Fica na camada à frente da imagem */
 }
 
 /* Responsividade: Empilhar em ecrãs de telemóvel */

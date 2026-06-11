@@ -485,6 +485,92 @@ p.hero-description{
 
 /*=======================index========================*/
 
+/* =========================================
+   SECÇÃO HERO COM VÍDEO
+   ========================================= */
+
+#hero-video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; 
+    
+    /* centrar o texto no meio do ecrã */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* O contentor do vídeo */
+#video-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+/* O vídeo */
+#video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: brightness(0.5); 
+}
+
+/* Texto e Botão*/
+#hero-content {
+    position: relative;
+    z-index: 1; 
+    color: #ffffff; 
+    padding: 20px;
+    margin: 300px;
+}
+
+#hero-content h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); 
+}
+
+#hero-content p {
+    font-size: 1.5rem;
+    letter-spacing: 3px; 
+    margin-bottom: 40px;
+}
+
+/* Botão */
+.button-video {
+    background-color: var(--cor-primaria); 
+    color: var(--cor-bottoms);
+    font-weight: bold;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px; 
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+
+.button-video:hover {
+    background-color: var(--cor-bottoms);
+    color: var(--background-cor);
+    transform: scale(1.05); 
+}
+
+/* Responsividade para Telemóveis */
+@media screen and (max-width: 768px) {
+    #hero-content h1 {
+        font-size: 3.5rem;
+    }
+    #hero-content p {
+        font-size: 1rem;
+    }
+}
+
 
       /*================PROJETOS===============*/
       
@@ -688,7 +774,6 @@ p.hero-description{
     object-fit: cover;
     border-radius: 8px; 
     transition: transform 0.3s ease;
-    margin-top: 20px;
 }
 
 .card__gallery_2 img:hover {

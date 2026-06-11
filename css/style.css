@@ -553,7 +553,7 @@ p.hero-description{
 .card__paragrafo {
   font-family: "Montserrat", sans-serif;
   font-size: 1.0rem;
-  color: #2985EE;
+  color: var(--cor-primaria);
   margin-top: -10px;
   padding-bottom: 5px;
 
@@ -679,6 +679,7 @@ p.hero-description{
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(4, 1fr);
     gap: 16px;
+    
 }
 
 .card__gallery_2 img {
@@ -687,6 +688,7 @@ p.hero-description{
     object-fit: cover;
     border-radius: 8px; 
     transition: transform 0.3s ease;
+    margin-top: 20px;
 }
 
 .card__gallery_2 img:hover {
@@ -700,19 +702,19 @@ p.hero-description{
 
 
 #sectionContactos {
-    padding: 60px 20px; /* Dá espaço em cima e em baixo da secção */
-    margin: 0 auto; /* Garante que fica centrado */
+    padding: 60px 20px; 
+    margin: 0 auto; 
 }
 
 .contact-container {
     display: flex;
     width: 100%;
-    gap: 60px; /* Espaço entre o formulário e o texto */
+    gap: 60px; 
 }
 
 /* --- ESTILOS DO FORMULÁRIO (ESQUERDA) --- */
 .contact-form {
-    flex: 1; /* Ocupa 50% do espaço */
+    flex: 1; 
 }
 
 .input-group {
@@ -723,7 +725,7 @@ p.hero-description{
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: var(--cor-texto-corrido); /* Podes mudar esta cor para combinar com a tua paleta */
+    color: var(--cor-texto-corrido); 
     font-size: 14px;
 }
 
@@ -737,16 +739,16 @@ p.hero-description{
     font-size: 14px;
     color: var(--cor-texto-corrido);
     outline: none;
-    font-family: Montsserat; /* Puxa a fonte Montserrat que definiste */
+    font-family: Montsserat; 
 }
 
 .input-group input:focus,
 .input-group textarea:focus {
-    border-color: var(--cor-bottoms); /* Cor de destaque quando se clica para escrever */
+    border-color: var(--cor-bottoms); 
 }
 
 .btn-submit {
-    background-color: var(--cor-bottoms); /* Cor amarelo/mostarda */
+    background-color: var(--cor-bottoms); 
     color: var(--cor-primaria);
     border: none;
     padding: 12px 24px;
@@ -768,7 +770,7 @@ p.hero-description{
 
 /* --- ESTILOS DAS INFORMAÇÕES (DIREITA) --- */
 .contact-info {
-    flex: 1; /* Ocupa 50% do espaço */
+    flex: 1;
 }
 
 .accent-text {
@@ -852,7 +854,7 @@ p.hero-description{
     color: var(--cor-primaria);
     border-radius: 50%;
     text-decoration: none;
-    font-size: 18px; /* Tamanho dos ícones Remix */
+    font-size: 18px; 
     transition: 0.3s ease;
 }
 
@@ -941,17 +943,17 @@ p.hero-description{
         width: 100%;
     }
     .sobre-imagem {
-        justify-content: center; /* Centra a imagem no mobile */
+        justify-content: center; 
     }
 
     /* Cards de Projetos - Remover paddings gigantes e empilhar */
     .container-hover-cards {
-        padding: 40px 20px; /* Reduz de 150px para 40px */
+        padding: 40px 20px; 
         margin-bottom: 20px;
     }
     .card__container {
         flex-direction: column;
-        align-items: center; /* Centra os cartões */
+        align-items: center; 
         gap: 2rem;
     }
 
@@ -963,13 +965,13 @@ p.hero-description{
         gap: 20px;
     }
     .card__proj__1 {
-        width: 100%; /* Remove a largura fixa de 600px */
+        width: 100%; 
         height: auto;
     }
 
     /* Galerias - Reduzir colunas para não ficarem minúsculas */
     .card__gallery_2 {
-        grid-template-columns: repeat(2, 1fr); /* Passa de 4 para 2 colunas no mobile */
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     /* Processing e Relógio - Empilhar e ajustar margens */
@@ -979,8 +981,8 @@ p.hero-description{
         padding: 20px;
     }
     .relogio {
-        margin: 40px auto; /* Remove a margem gigante de 100px */
-        position: relative; /* Desativa o sticky no mobile, costuma causar bugs de leitura */
+        margin: 40px auto; 
+        position: relative; 
         top: 0;
     }
 }
@@ -990,7 +992,7 @@ p.hero-description{
 
 /* 1. Controlar os ícones (Garante que nunca se sobrepõem) */
 .nav__toggle {
-  z-index: var(--z-fixed); /* Mantém o botão clicável por cima de tudo */
+  z-index: var(--z-fixed); 
   cursor: pointer;
   position: relative;
   width: 32px;
@@ -1002,7 +1004,7 @@ p.hero-description{
 }
 
 .nav__close {
-  display: none; /* O "X" fica escondido por defeito */
+  display: none; /
 }
 
 /* Quando o JavaScript ativa o menu aberto */
@@ -1019,14 +1021,14 @@ p.hero-description{
   
   .nav__menu {
     position: fixed;
-    top: -100%; /* Esconde o menu totalmente fora do ecrã no topo */
+    top: -100%; 
     left: 0;
     width: 100%;
-    height: 100vh; /* Ocupa a altura toda do ecrã */
-    background-color: var(--cor-bottoms); /* Aplica a cor creme */
-    padding-top: 6rem; /* Dá espaço para o logo e botão no topo */
-    transition: top 0.4s ease; /* Animação suave a descer */
-    z-index: 90; /* Fica abaixo do topHeader mas acima da página */
+    height: 100vh; 
+    background-color: var(--cor-bottoms); 
+    padding-top: 6rem; 
+    transition: top 0.4s ease; 
+    z-index: 90; 
     
     /* Centrar o conteúdo do menu */
     display: flex;
